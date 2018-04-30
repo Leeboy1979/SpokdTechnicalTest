@@ -18,6 +18,7 @@ namespace SpokdTechnicalTest.Controllers
         /// <param name="targetNumber"></param>
         /// <returns></returns>
         [AllowAnonymous]
+        [HttpGet]
         public IHttpActionResult GetPrimeNumbers(int id)
         {
             var primeNumberViewModel = new PrimeNumberViewModel();
@@ -38,6 +39,7 @@ namespace SpokdTechnicalTest.Controllers
         }
 
         [AllowAnonymous]
+        [HttpGet]
         public IHttpActionResult AltGetPrimeNumbers(int id)
         {
             var primeNumberViewModel = new PrimeNumberViewModel();
